@@ -1,0 +1,149 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  background-image: url("../img/satellite-earth-view.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 200px 0;
+}
+
+h1 {
+  margin: 0;
+}
+.weather-app {
+  background-color: aliceblue;
+  max-width: 30%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 30px;
+}
+.header-form {
+  border-bottom: 1px solid white;
+  background-color: aliceblue;
+  max-width: 30%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  margin-top: 80px;
+  border-radius: 30px;
+}
+
+.search-form {
+  width: 100%;
+  text-align: center;
+}
+
+.search-form-input {
+  border: none;
+  width: 60%;
+  background-color: white;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 12px;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.search-form-button {
+  border: 1px solid blue;
+  background-color: blue;
+  color: aliceblue;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.search-form-button:hover {
+  background-color: white;
+  border: 1px solid blue;
+  color: blue;
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  margin: 5px 0 5px;
+}
+
+.current-location {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 200;
+}
+
+.current-time {
+  font-weight: 200;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-size: 10px;
+}
+.current-location-icon {
+  position: relative;
+  margin-top: 1px;
+  margin-right: 2px;
+}
+
+.current-temp {
+  text-align: center;
+}
+
+.temp-information {
+  display: flex;
+  justify-content: center;
+  margin-left: 15px;
+}
+.temp {
+  margin: 60px 0 5px;
+  font-size: 80px;
+}
+
+.degree-icon {
+  position: relative;
+  font-size: 10;
+  margin-top: 80px;
+}
+.current-temp-icon {
+  height: 120px;
+}
+
+.current-temp-description {
+  padding-top: 0px;
+}
+
+.weather-detail-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 60px 0 0;
+  font-weight: 400;
+}
+
+.weather-detail {
+  display: flex;
+  justify-content: space-around;
+  font-size: 10px;
+}
+
+.weather-detail-icon {
+  position: relative;
+  margin-top: 1px;
+  margin-right: 2px;
+}
+
+footer {
+  text-align: center;
+  font-size: 7px;
+  margin: 30px;
+  border-top: 1px solid white;
+  padding-top: 30px;
+}
+
+a {
+  color: blue;
+}

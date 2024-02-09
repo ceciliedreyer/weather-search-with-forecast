@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" class="css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="header-form">
+      <form class="search-form" id="search-form">
+        <input
+          type="search"
+          placeholder="enter a city..."
+          required
+          class="search-form-input"
+          id="search-form-input"
+        />
+        <input type="submit" value="search" class="search-form-button" />
+      </form>
+    </div>
+    <div class="weather-app">
+      <header class="header-info">
+        <h3 class="current-location">
+          <span class="current-location-icon"
+            ><span class="material-symbols-outlined"> location_on </span></span
+          ><span class="current-location-city" id="current-location-city"
+            >current city</span
+          >
+        </h3>
+        <h3 class="current-time" id="current-time">current time</h3>
+      </header>
+      <main>
+        <div class="current-temp">
+          <h1 class="temp-information">
+            <span id="temp" class="temp"></span
+            ><span class="degree-icon">°</span>
+          </h1>
+          <div id="current-temp-icon">
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+              class="current-temp-icon"
+            />
+          </div>
+          <div class="current-temp-description" id="current-temp-description">
+            broken clouds
+          </div>
+        </div>
+
+        <div>
+          <ul class="weather-detail-list">
+            <li class="weather-detail">
+              <span class="weather-detail-icon">
+                <span class="material-symbols-outlined">
+                  thermostat
+                </span></span
+              >
+              <span id="weather-detail-feels">weather detail</span>
+            </li>
+            <li class="weather-detail" id="weather-detail-degree">
+              <span class="weather-detail-icon"
+                ><span class="material-symbols-outlined"> opacity </span></span
+              ><span id="weather-detail-humidity">weather detail </span>
+            </li>
+            <li class="weather-detail">
+              <span class="weather-detail-icon"
+                ><span class="material-symbols-outlined"> air </span></span
+              ><span id="weather-detail-speed">weather detail</span>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/ceciliedreyer">Cecilie Dreyer Lyng</a> and
+        is open-sourced
+        <a href="https://github.com/ceciliedreyer/Vanilla-Weather-Search"
+          >on GitHub</a
+        >
+        and hosted <a href="https://vejr.netlify.app/">on Netlify</a>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
