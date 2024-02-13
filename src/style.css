@@ -97,14 +97,14 @@ h1 {
   margin-left: 15px;
 }
 .temp {
-  margin: 60px 0 5px;
+  margin: 20px 0 5px;
   font-size: 80px;
 }
 
 .degree-icon {
   position: relative;
   font-size: 10;
-  margin-top: 80px;
+  margin-top: 32px;
 }
 .current-temp-icon {
   height: 120px;
@@ -120,7 +120,7 @@ h1 {
   list-style: none;
   text-align: center;
   padding: 0;
-  margin: 60px 0 0;
+  margin: 20px 0 20px;
   font-weight: 400;
 }
 
@@ -134,6 +134,35 @@ h1 {
   position: relative;
   margin-top: 1px;
   margin-right: 2px;
+}
+
+.weather-forecast-day {
+  max-width: 100%;
+  margin: 10px 0;
+}
+.weather-forecast {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  text-align: center;
+  background-color: rgb(255, 2555, 255, 0.6);
+  border-radius: 6px;
+  opacity: 0.8;
+}
+
+.forecast-date {
+  font-size: 12px;
+}
+.forecast-icon {
+  max-width: 100%;
+}
+
+.forecast-high-temp {
+  font-size: 10px;
+}
+
+.forecast-low-temp {
+  font-size: 10px;
+  opacity: 0.6;
 }
 
 footer {
