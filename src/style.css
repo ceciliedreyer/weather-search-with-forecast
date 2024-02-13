@@ -120,7 +120,7 @@ h1 {
   list-style: none;
   text-align: center;
   padding: 0;
-  margin: 20px 0 20px;
+  margin: 20px 0 30px;
   font-weight: 400;
 }
 
@@ -150,7 +150,13 @@ h1 {
 }
 
 .forecast-date {
-  font-size: 12px;
+  font-size: 10px;
+  opacity: 0.6;
+}
+
+.forecast-low-temp {
+  font-size: 10px;
+  opacity: 0.6;
 }
 .forecast-icon {
   max-width: 100%;
@@ -158,11 +164,6 @@ h1 {
 
 .forecast-high-temp {
   font-size: 10px;
-}
-
-.forecast-low-temp {
-  font-size: 10px;
-  opacity: 0.6;
 }
 
 footer {

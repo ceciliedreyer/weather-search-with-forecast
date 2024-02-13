@@ -53,6 +53,33 @@ function updateCity(event) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", updateCity);
 
+function displayForecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHTML = "";
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div>
+          <div class="weather-forecast-day">
+            <span class="forecast-date">${day}</span>
+            <img
+              class="forecast-icon"
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+              class="current-temp-icon"
+            />
+            <span class="forecast-high-temp">10° </span>
+            <span class="forecast-low-temp">10°</span>
+          </div>
+          </div>
+    `;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function formatDate(date) {
   let currentHour = date.getHours();
   let currentMinute = date.getMinutes();
@@ -86,3 +113,4 @@ let now = new Date();
 let timeElement = document.querySelector("#current-time");
 
 searchCity("Skæring");
+displayForecast();
