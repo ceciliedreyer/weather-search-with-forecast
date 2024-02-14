@@ -7,7 +7,7 @@ function updateWeather(response) {
     "#current-temp-description"
   );
   let currentCity = document.querySelector("#current-location-city");
-  let feelsLike = Math.round(response.data.temperature.feels_like);
+  let feelsLike = `${Math.round(response.data.temperature.feels_like)}°`;
   let feelsLikeElement = document.querySelector("#weather-detail-feels");
   let humidity = `${response.data.temperature.humidity}%`;
   let humidityElement = document.querySelector("#weather-detail-humidity");
@@ -53,7 +53,9 @@ function updateCity(event) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", updateCity);
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data);
+
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHTML = "";
 
@@ -78,6 +80,13 @@ function displayForecast() {
 
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHTML;
+}
+
+function getForecast(response) {
+  let apiKey = "c0f7a728c0575391764t3b111d69od7f";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query={query}&key=${apiKey}`;
+
+  axios(apiUrl).then(displayForecast);
 }
 
 function formatDate(date) {
@@ -113,4 +122,3 @@ let now = new Date();
 let timeElement = document.querySelector("#current-time");
 
 searchCity("Skæring");
-displayForecast();
